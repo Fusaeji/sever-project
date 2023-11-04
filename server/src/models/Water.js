@@ -3,9 +3,9 @@ module.exports = (sequelize, DataTypes) => {
         waterparkname: DataTypes.STRING,
         location: DataTypes.STRING,
         date: DataTypes.STRING,
-        telephone: DataTypes.STRING,
+        telephone: DataTypes.INTEGER,
         website: DataTypes.STRING,
-        rateprice: DataTypes.STRING
+        rateprice: DataTypes.INTEGER
     })
     return Water
 }
