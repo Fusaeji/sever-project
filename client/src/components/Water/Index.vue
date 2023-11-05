@@ -1,6 +1,6 @@
 <template>
     <div>
-
+        <div class="background-image">
         <h2>ข้อมูลแนะนำสวนน้ำ</h2>
         <h4>จํานวนผู้ใช้งาน {{ waters.length }}</h4>
         <button v-on:click="navigateTo('/water/create')">เพิ่มข้อมูล</button>
@@ -17,7 +17,7 @@
             </p>
             <hr>
         </div>
-
+    </div>
     </div>
 </template>
 
@@ -69,5 +69,15 @@ export default {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.background-image {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 191, 255);
+  background-image: url('~@/pic/bg3.jpg');
+  height: 100vh;
+}
+
+</style>
    

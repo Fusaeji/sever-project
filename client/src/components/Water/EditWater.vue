@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="background-image">
         <h1>Edit Water</h1>
         <form v-on:submit.prevent="editWater">
             <p>ชื่อสวนน้ำ : <input type="text" v-model="water.waterparkname"></p>
@@ -12,6 +13,7 @@
         </form>
         <hr>
     </div>
+</div>
 </template>
 <script>
 import WaterService from '@/services/WaterService'
@@ -50,4 +52,14 @@ export default {
     }
 }
 </script>
-<style scoped></style>
+<style scoped>
+
+.background-image {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 191, 255);
+  background-image: url('~@/pic/bg4.jpg');
+  height: 100vh;
+}
+</style>

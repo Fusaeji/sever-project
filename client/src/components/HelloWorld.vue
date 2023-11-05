@@ -1,11 +1,9 @@
 <template>
-  <div class="hello">
     <div class="background-image">
       <div class="container-fluid">
-        <p>แนะนำโดยคุณฟิว</p>
+        <p>แนะนำโดยคุณ พิชัย</p>
         <button v-on:click="navigateTo('/waters')">ดูข้อมูลผู้ใช้</button>
       </div>
-    </div>
   </div>
 </template>
 
@@ -30,6 +28,8 @@ export default {
   text-align: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgb(0, 191, 255);
+  background-image: url('~@/pic/bg.jpg');
   height: 100vh;
 }
 
@@ -38,8 +38,10 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: rgb(10, 10, 10);
   text-align: center;
   height: 100%;
+  font-size: 45px;
 }
 
 h1, h2 {

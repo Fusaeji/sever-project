@@ -1,5 +1,5 @@
 <template>
-
+    <div class="background-image">
     <div>
         <h1>Get Water By Id</h1>
         <hr>
@@ -15,6 +15,7 @@
         </p>
         <hr>
     </div>
+</div>
 
 </template>
 
@@ -49,4 +50,14 @@ export default {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+.background-image {
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 191, 255);
+  background-image: url('~@/pic/bg2.jpg');
+  height: 100vh;
+}
+
+</style>
